@@ -1,0 +1,27 @@
+{
+  "id": "main-arena",
+  "name": "Main Arena",
+  "width": 1200,
+  "height": 800,
+  "sections": [
+    {
+      "id": "premium",
+      "name": "Premium Section",
+      "color": "#ff6b6b",
+      "seats": 300
+    },
+    {
+      "id": "standard",
+      "name": "Standard Section",
+      "color": "#4ecdc4",
+      "seats": 750
+    },
+    {
+      "id": "economy",
+      "name": "Economy Section",
+      "color": "#45b7d1",
+      "seats": 500
+    }
+  ],
+  "seats": []
+}

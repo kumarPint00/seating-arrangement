@@ -1,0 +1,76 @@
+.zoom-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10;
+}
+
+.zoom-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.zoom-button:active {
+  transform: translateY(0);
+}
+
+.zoom-button:focus {
+  outline: 2px solid #4A90E2;
+  outline-offset: 2px;
+}
+
+.zoom-reset {
+  font-size: 12px;
+  font-weight: 600;
+  height: 32px;
+}
+
+.zoom-level {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .zoom-controls {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .zoom-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .zoom-reset {
+    font-size: 10px;
+    height: 28px;
+  }
+}
